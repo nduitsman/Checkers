@@ -1,0 +1,81 @@
+body {
+    background-image: url("https://secure.img1-fg.wfcdn.com/im/95715564/resize-h350%5Ecompr-r85/3948/39483071/Mullin+Distressed+Brick+8%2527+x+118%2522+6+Piece+Wall+Mural+Set.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 100px 1fr 200px;
+    grid-template-columns: 200px 1fr 200px;
+    justify-content: center;
+    justify-items: center;
+    /* align-items: center; */
+}
+
+.board {
+    position: relative;
+    background-color: none;
+    display: grid;
+    justify-content: center;
+    grid-row: 2;
+    grid-column: 2;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 600px;
+    height: 600px;
+    border: 25px solid black;
+    padding: 1em;
+    max-width: 700px;
+}
+
+.tile {
+    position: relative;
+    display: grid;
+    padding: auto;
+    border: 1px solid black;
+    place-items: center;
+}
+
+.tile.black {
+    background-color: #333;
+}
+
+.tile.red {
+    background-color: rgb(236, 109, 109);
+}
+
+#player10,#player11,#player12,#player13,#player14,#player15,#player16,#player17,#player18,#player19,#player110,#player111{
+    position: absolute;
+    display: grid;
+    background-color: black;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    cursor: move;
+}
+
+#player20,#player21,#player22,#player23,#player24,#player25,#player26,#player27,#player28,#player29,#player210,#player211 {
+    position: absolute;
+    display: grid;
+    background-color: red;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    cursor: move;
+}
+
+.startGame {
+    display: flex;
+    grid-row: 3;
+    grid-column: 2;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
